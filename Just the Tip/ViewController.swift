@@ -16,7 +16,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var TotalLabel: UILabel!
     
+    @IBOutlet weak var PerPersonLabel: UILabel!
+    
     @IBOutlet weak var TipControl: UISegmentedControl!
+    
+    @IBOutlet weak var PeopleControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +48,14 @@ class ViewController: UIViewController {
         TipLabel.text = String(format: "$%.2f", tip)
         TotalLabel.text = String(format: "$%.2f", total)
         
+        let People = [1.0, 2.0, 3.0, 4.0]
+        
+        let SplitBill = total / People[PeopleControl.selectedSegmentIndex]
+        
+        PerPersonLabel.text = String(format:"$%.2f", SplitBill)
+        
     }
 
-
+    
 }
 
