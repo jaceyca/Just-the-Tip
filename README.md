@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+* [x] The bill can be split between multiple people.
 
 ## Video Walkthrough
 
@@ -33,7 +33,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I was learning how to pass info between viewcontrollers, and accidentally deleted my main storyboard.
+Consequently, I had to redo my project.
+I learned to always be careful, especially when warning signs pop up.
 
 ## Credits
 
